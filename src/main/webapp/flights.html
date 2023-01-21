@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <STYLE>.center {
+            text-align: center;
+          }</STYLE>
+        <title>Flights Booking</title>
+        <link rel="shortcut icon" href="assets/images/activity/favicon.ico" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom-dynamic.js"></script>
+    <link rel="stylesheet" type="text/css" href="calenplugin/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <a href="index.html" class="navbar-brand font-weight-bold wow fadeInDown">
+                  <h2>
+                     MASTER PLAITING
+                     <!--<img src="" class="img-logo img-fluid" alt="logo"/>-->
+                  </h2>
+               </a>
+                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenavbar">
+               <i class="fa fa-align-justify"></i>
+               </button>
+               <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                  <ul class="navbar-nav ml-auto ">
+                     
+                     <li class="nav-item dropdown nav-left">
+                        <div class="wow fadeInDown nav-img trip" data-wow-delay="70ms">
+                           <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                           <img src="assets/images/inner/user.png" alt="currency">Your Trips
+                           </a>
+                           <div class="dropdown-menu">                              
+                              <a class="dropdown-item" href="">Cancellations</a>
+                              <a class="dropdown-item" href="">Print ticket</a>
+                              <a class="dropdown-item" href="">Print Voucher</a>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+        </header>
+        
+    <div class="center">
+        <form action="flight.jsp" method="Post">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
+                            <h3>Search Flights</h3>
+                            <p>Fly anywhere. Fly everywhere.</p>
+                            <h6 class="flashDiv"><strong>Flash Sale:</strong> Grab the lowest airfares starting at Rs.1999. Hurry, book now.</h6>                            
+                                                <div class="form-group">                                                                                                          
+                                                            <center><label>From*</label></center>
+                                                            <select id="country" name="country" style="width: 300px"class="custom-select form-control">
+                                                             <option value="">city</option>
+                                                                <option value="CHENNAI">CHENNAI</option>
+                                                                <option value="ROME">ROME</option>
+                                                                <option value="MILAN">MILAN</option>
+                                                                <option value="HOUSTON">HOUSTON</option>
+                                                                <option value="MADRID">MADRID</option>
+                                                                <option value="MOSCOW">MOSCOW</option>
+                                                                <option value="MANCHESTER">MANCHESTER</option>
+                                                                <option value="SYDNEY">SYDNEY</option>
+                                                                <option value="ISTANBUL">ISTANBUL</option>                                                                                                                
+                                                            </select>                                                                                                               
+                                                    </div>                                                    
+                                                        <div class="form-group">
+                                                            <center><label>To*</label></center>
+                                                            <select id="country1" name="country1" style="width: 300px" class="custom-select form-control">
+                                                           <option value="">city</option>
+                                                                <option value="CHENNAI">CHENNAI</option>
+                                                                <option value="ROME">ROME</option>
+                                                                <option value="MILAN">MILAN</option>
+                                                                <option value="HOUSTON">HOUSTON</option>
+                                                                <option value="MADRID">MADRID</option>
+                                                                <option value="MOSCOW">MOSCOW</option>
+                                                                <option value="MANCHESTER">MANCHESTER</option>
+                                                                <option value="SYDNEY">SYDNEY</option>
+                                                                <option value="ISTANBUL">ISTANBUL</option>
+                                                                </select>                                                        
+                                                        </div>
+                                                    </div>                                                                                                                                                                
+                                                        <div class="form-group">
+                                                            <center><label>Depart on*</label></center>                                                               
+                                                                    <input class="center" type="date"  name="picker" required>
+                                                                    <div class="input-group-append"><div class="center">
+                                                                        <span class="input-group-text"></span></div>
+                                                                    </div>                                                                
+                                                        </div>                                                                                                                                                            
+                                                    <center><div class="col-md-12 col-lg-3 col-xl-3 col-12">
+                                                        <div class="form-group">
+                                                            <label>PASSENGERS*</label><br>
+                                                            <input type="number" class="center" name="passengers">
+                                                                
+                                                        </div>
+                                                    </div>
+                                                    </center>
+                                                
+                                                        <center><div class="col-md-12 col-lg-3 col-xl-3 col-12">
+                                                            <div class="form-group">
+                                                                <center><label>MOBILE NUMBER</label></center>                                                                    
+                                                                        <input type="tel" name="mobilenum" id="phone_number" class="center" style= "width :300px" pattern="^\d{10}$" required="required">           
+                                                                        <div class="input-group-append">                                                                                                                                              
+                                                                </div>
+                                                            </div>
+                                                        </div></center>
+                                                    
+                                                
+                                                
+                                                
+                                        <div class="center">
+                                                     <input type="submit" name="submit" class="submitButton" value="Search Flights"></div>
+                                                
+                    </form></div>
+                    <footer class="page-footer font-small mdb-color pt-2">
+                        <div class="container">
+                           <div class="row">
+                            <div class="col-lg-9 col-md-8 col-12">
+                                 <!--Copyright-->
+                                 <p class="text-left">© 2021 Copyright :
+                                    <strong> MASTER PLAITING</strong>
+                                    Powered By MASTER PLAITING
+                                 </p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12 foot-social">
+                                 Connect with us at 
+                                 <a class="social-footer" href="https://www.facebook.com/stunner.suriya" target="_blank">
+                                 <i class="fa fa-facebook"></i>
+                                 </a>
+                                 <a class="social-footer" href="https://twitter.com/Juve_Suri" target="_blank">
+                                 <i class="fa fa-twitter"></i>
+                                 </a>
+                                 <a class="social-footer" href="https://in.linkedin.com/in/suriyaa-vijay-1a8338213" target="_blank">
+                                 <i class="fa fa-linkedin"></i>
+                                 </a>
+                                 <a class="social-footer" href="https://www.instagram.com/suriyxa/" target="_blank">
+                                 <i class="fa fa-instagram -p" aria-hidden="true"></i>
+                                 </a>                              
+                            </div>
+                            </div>
+                        </div>
+                    </footer>                    
+        </body>
+     
+    
+        
+</html>
