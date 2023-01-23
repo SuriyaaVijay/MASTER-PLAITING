@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Travelers information</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/inner/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="calenplugin/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .left{text-align :center; align-items: center; align-content: center;}
+        .temp123{
+            text-align:center;
+          }
+          .temp123 > input{
+            text-align:left;
+          }
+    </style>
+</head>
+ <body>
+
+    <header id="header">
+        <div class="container">
+           <nav class="navbar navbar-expand-lg navbar-light">
+              <a href="index.html" class="navbar-brand font-weight-bold wow fadeInDown">
+                 <h1>
+                    MASTER PLAITING 
+                    <!--<img src="" class="img-logo img-fluid" alt="logo"/>-->
+                 </h1>
+              </a>
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenavbar">
+              <i class="fa fa-align-justify"></i>
+              </button>
+                 <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                    <ul class="navbar-nav ml-auto ">
+                       <li class="nav-item dropdown nav-left">
+                          <div class="wow fadeInDown nav-img trip" data-wow-delay="70ms">
+                             <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                             <img src="assets/images/inner/user.png" alt="currency">Your Trips
+                             </a>
+                             <div class="dropdown-menu">
+                                <a class="dropdown-item" href="">Print ticket</a>
+                                <a class="dropdown-item" href="">Print Voucher</a>
+                             </div>
+                          </div>
+                       </li>
+                    </ul>
+                 </div>
+           </nav>
+        </div>
+     <div class="clearfix"></div>
+     </header>
+     
+        <div class="container" id="travellerId">
+            <div class="row">
+                <div class="col-12">
+                    <br><br>
+                    <div class="cleartrip-choose4 pt-4">
+                        <span class="itineId">#</span><span>Travelers</span><span class="float-right review">Bon Voyeur !</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+                    
+                    
+                        <form action="Payment.jsp" method="Post"  id="travelForm">                                                            
+                                    <div class="left">
+                                          <br><BR>                                    
+                                            <strong>Traveler</strong> &nbsp;&nbsp;&nbsp;                                                                        
+                                            <select class="custom-select form-control"style="width: 90px" id="titleDiv" name="titleDiv" required>
+                                                <option value="">Title</option>
+                                                <option value="Mr">Mr</option>
+                                                <option value="Ms">Ms</option>
+                                                <option value="Mrs">Mrs</option>
+                                            </select>                                    
+                                        <br><br>
+                                        &nbsp;&nbsp;&nbsp;<strong>First Name</strong> &nbsp;&nbsp;&nbsp;   
+                                        <input type="text" class="left"style="width: 250px" placeholder="First Name" id="name1" name="name" required>
+                                        
+                                        <br>
+                                        <br>
+                                            <strong>Mobile Number&nbsp;&nbsp;&nbsp;</strong>
+                                            <input type="tel"  style="width: 250px"placeholder="Mobile Number" id="mobileNum" name="mobileNum" required>                                        
+                                            
+                                            <strong>  <br><br>&nbsp;&nbsp;&nbsp;<label>GST</label>&nbsp;&nbsp;
+                                            <input type="checkbox"  class="left" id="travelCheck" name="travelCheck" required>   Use GSTIN for this booking (Optional)                                      
+                                      <br><br>
+                                       <label>Your Address </label> &nbsp;&nbsp;
+                                    <input type="textarea" style="width: 300px" placeholder="ADDRESS" id="address" name="address" required>   
+                                    <br><br>                                                                                                         
+                                             
+                                    <label>Your Email Address </label> &nbsp;&nbsp;
+                                    <input type="email" style="width: 300px"placeholder="Email ID" id="emailId" name="emailId" required>   <br> <br><br>                                                                                                         
+                                            </strong>      <center><input type="submit" name="submit" class="submitButton" value="Continue Booking"></center> 
+                                        </div>  
+                        </form>                                                                            
+    <!--start footer-->
+      <footer class="page-footer font-small mdb-color pt-2">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-9 col-md-8 col-12">
+                 <!--Copyright-->
+                 <p class="text-md-left">© 2021 Copyright :
+                    <strong> MASTER PLAITING</strong>
+                    Powered By MASTER PLAITING
+                 </p>
+              </div>
+              <div class="col-lg-3 col-md-4 col-12 foot-social">
+                 Connect with us at 
+                 <a class="social-footer" href="https://www.facebook.com/stunner.suriya" target="_blank">
+                 <i class="fa fa-facebook"></i>
+                 </a>
+                 <a class="social-footer" href="https://twitter.com/Juve_Suri" target="_blank">
+                 <i class="fa fa-twitter"></i>
+                 </a>
+                 <a class="social-footer" href="https://in.linkedin.com/in/suriyaa-vijay-1a8338213" target="_blank">
+                 <i class="fa fa-linkedin"></i>
+                 </a>
+                 <a class="social-footer" href="https://www.instagram.com/suriyxa/" target="_blank">
+                 <i class="fa fa-instagram -p" aria-hidden="true"></i>
+                 </a>
+              </div>
+           </div>
+        </div>
+     </footer>
+     <script src="assets/js/jquery-3.4.1.js"></script>
+     <script src="assets/js/wow.min.js"></script>
+     <script src="assets/js/bootstrap.min.js"></script>
+     <script src="assets/js/custom-dynamic.js"></script>
+  </body>
+</html>
